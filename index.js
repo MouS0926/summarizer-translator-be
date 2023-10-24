@@ -116,7 +116,7 @@ app.post('/summarize', async (req, res) => {
     //   const summary = response
 
       const summary = response.choices[0].message.content;
-  // console.log(summary);
+
       res.status(200).send({ summary });
     } catch (error) {
         console.log(error);
